@@ -13,8 +13,10 @@
 		AA7A7A921D46A08000A12906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A901D46A08000A12906 /* Main.storyboard */; };
 		AA7A7A941D46A08000A12906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A931D46A08000A12906 /* Assets.xcassets */; };
 		AA7A7A971D46A08000A12906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A951D46A08000A12906 /* LaunchScreen.storyboard */; };
-		AA7A7AA21D46A08000A12906 /* WalletTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */; };
 		AA7A7AAD1D46A08100A12906 /* WalletTDDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */; };
+		AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */; };
+		AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
+		AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,11 +48,13 @@
 		AA7A7A961D46A08000A12906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA7A7A981D46A08000A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7A7A9D1D46A08000A12906 /* WalletTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTDDTests.m; sourceTree = "<group>"; };
 		AA7A7AA31D46A08000A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA7A7AA81D46A08000A12906 /* WalletTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTDDUITests.m; sourceTree = "<group>"; };
 		AA7A7AAE1D46A08100A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuroTest.m; sourceTree = "<group>"; };
+		AA7A7AC41D46A41D00A12906 /* JAREuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAREuro.h; sourceTree = "<group>"; };
+		AA7A7AC51D46A41D00A12906 /* JAREuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuro.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		AA7A7A861D46A08000A12906 /* WalletTDD */ = {
 			isa = PBXGroup;
 			children = (
+				AA7A7ABD1D46A32400A12906 /* Models */,
 				AA7A7A8A1D46A08000A12906 /* AppDelegate.h */,
 				AA7A7A8B1D46A08000A12906 /* AppDelegate.m */,
 				AA7A7A8D1D46A08000A12906 /* ViewController.h */,
@@ -125,7 +130,7 @@
 		AA7A7AA01D46A08000A12906 /* WalletTDDTests */ = {
 			isa = PBXGroup;
 			children = (
-				AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */,
+				AA7A7ABA1D46A1DD00A12906 /* Models */,
 				AA7A7AA31D46A08000A12906 /* Info.plist */,
 			);
 			path = WalletTDDTests;
@@ -138,6 +143,23 @@
 				AA7A7AAE1D46A08100A12906 /* Info.plist */,
 			);
 			path = WalletTDDUITests;
+			sourceTree = "<group>";
+		};
+		AA7A7ABA1D46A1DD00A12906 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AA7A7ABD1D46A32400A12906 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7AC41D46A41D00A12906 /* JAREuro.h */,
+				AA7A7AC51D46A41D00A12906 /* JAREuro.m */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +292,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */,
 				AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */,
 				AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */,
 				AA7A7A891D46A08000A12906 /* main.m in Sources */,
@@ -280,7 +303,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA7A7AA21D46A08000A12906 /* WalletTDDTests.m in Sources */,
+				AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */,
+				AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
