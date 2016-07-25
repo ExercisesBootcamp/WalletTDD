@@ -1,0 +1,519 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA7A7A891D46A08000A12906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A881D46A08000A12906 /* main.m */; };
+		AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A8B1D46A08000A12906 /* AppDelegate.m */; };
+		AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A8E1D46A08000A12906 /* ViewController.m */; };
+		AA7A7A921D46A08000A12906 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A901D46A08000A12906 /* Main.storyboard */; };
+		AA7A7A941D46A08000A12906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A931D46A08000A12906 /* Assets.xcassets */; };
+		AA7A7A971D46A08000A12906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A951D46A08000A12906 /* LaunchScreen.storyboard */; };
+		AA7A7AA21D46A08000A12906 /* WalletTDDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */; };
+		AA7A7AAD1D46A08100A12906 /* WalletTDDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AA7A7A9E1D46A08000A12906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7A7A7C1D46A08000A12906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7A7A831D46A08000A12906;
+			remoteInfo = WalletTDD;
+		};
+		AA7A7AA91D46A08000A12906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AA7A7A7C1D46A08000A12906 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AA7A7A831D46A08000A12906;
+			remoteInfo = WalletTDD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AA7A7A841D46A08000A12906 /* WalletTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7A7A881D46A08000A12906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA7A7A8A1D46A08000A12906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA7A7A8B1D46A08000A12906 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA7A7A8D1D46A08000A12906 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA7A7A8E1D46A08000A12906 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA7A7A911D46A08000A12906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AA7A7A931D46A08000A12906 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AA7A7A961D46A08000A12906 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AA7A7A981D46A08000A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7A7A9D1D46A08000A12906 /* WalletTDDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTDDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTDDTests.m; sourceTree = "<group>"; };
+		AA7A7AA31D46A08000A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA7A7AA81D46A08000A12906 /* WalletTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTDDUITests.m; sourceTree = "<group>"; };
+		AA7A7AAE1D46A08100A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA7A7A811D46A08000A12906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7A9A1D46A08000A12906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7AA51D46A08000A12906 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA7A7A7B1D46A08000A12906 = {
+			isa = PBXGroup;
+			children = (
+				AA7A7A861D46A08000A12906 /* WalletTDD */,
+				AA7A7AA01D46A08000A12906 /* WalletTDDTests */,
+				AA7A7AAB1D46A08000A12906 /* WalletTDDUITests */,
+				AA7A7A851D46A08000A12906 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA7A7A851D46A08000A12906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7A841D46A08000A12906 /* WalletTDD.app */,
+				AA7A7A9D1D46A08000A12906 /* WalletTDDTests.xctest */,
+				AA7A7AA81D46A08000A12906 /* WalletTDDUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA7A7A861D46A08000A12906 /* WalletTDD */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7A8A1D46A08000A12906 /* AppDelegate.h */,
+				AA7A7A8B1D46A08000A12906 /* AppDelegate.m */,
+				AA7A7A8D1D46A08000A12906 /* ViewController.h */,
+				AA7A7A8E1D46A08000A12906 /* ViewController.m */,
+				AA7A7A901D46A08000A12906 /* Main.storyboard */,
+				AA7A7A931D46A08000A12906 /* Assets.xcassets */,
+				AA7A7A951D46A08000A12906 /* LaunchScreen.storyboard */,
+				AA7A7A981D46A08000A12906 /* Info.plist */,
+				AA7A7A871D46A08000A12906 /* Supporting Files */,
+			);
+			path = WalletTDD;
+			sourceTree = "<group>";
+		};
+		AA7A7A871D46A08000A12906 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7A881D46A08000A12906 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA7A7AA01D46A08000A12906 /* WalletTDDTests */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7AA11D46A08000A12906 /* WalletTDDTests.m */,
+				AA7A7AA31D46A08000A12906 /* Info.plist */,
+			);
+			path = WalletTDDTests;
+			sourceTree = "<group>";
+		};
+		AA7A7AAB1D46A08000A12906 /* WalletTDDUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */,
+				AA7A7AAE1D46A08100A12906 /* Info.plist */,
+			);
+			path = WalletTDDUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA7A7A831D46A08000A12906 /* WalletTDD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7A7AB11D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDD" */;
+			buildPhases = (
+				AA7A7A801D46A08000A12906 /* Sources */,
+				AA7A7A811D46A08000A12906 /* Frameworks */,
+				AA7A7A821D46A08000A12906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WalletTDD;
+			productName = WalletTDD;
+			productReference = AA7A7A841D46A08000A12906 /* WalletTDD.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AA7A7A9C1D46A08000A12906 /* WalletTDDTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7A7AB41D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDTests" */;
+			buildPhases = (
+				AA7A7A991D46A08000A12906 /* Sources */,
+				AA7A7A9A1D46A08000A12906 /* Frameworks */,
+				AA7A7A9B1D46A08000A12906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA7A7A9F1D46A08000A12906 /* PBXTargetDependency */,
+			);
+			name = WalletTDDTests;
+			productName = WalletTDDTests;
+			productReference = AA7A7A9D1D46A08000A12906 /* WalletTDDTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AA7A7AA71D46A08000A12906 /* WalletTDDUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA7A7AB71D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDUITests" */;
+			buildPhases = (
+				AA7A7AA41D46A08000A12906 /* Sources */,
+				AA7A7AA51D46A08000A12906 /* Frameworks */,
+				AA7A7AA61D46A08000A12906 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA7A7AAA1D46A08000A12906 /* PBXTargetDependency */,
+			);
+			name = WalletTDDUITests;
+			productName = WalletTDDUITests;
+			productReference = AA7A7AA81D46A08000A12906 /* WalletTDDUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA7A7A7C1D46A08000A12906 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Juan Arillo Ruiz";
+				TargetAttributes = {
+					AA7A7A831D46A08000A12906 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					AA7A7A9C1D46A08000A12906 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AA7A7A831D46A08000A12906;
+					};
+					AA7A7AA71D46A08000A12906 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AA7A7A831D46A08000A12906;
+					};
+				};
+			};
+			buildConfigurationList = AA7A7A7F1D46A08000A12906 /* Build configuration list for PBXProject "WalletTDD" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA7A7A7B1D46A08000A12906;
+			productRefGroup = AA7A7A851D46A08000A12906 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA7A7A831D46A08000A12906 /* WalletTDD */,
+				AA7A7A9C1D46A08000A12906 /* WalletTDDTests */,
+				AA7A7AA71D46A08000A12906 /* WalletTDDUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA7A7A821D46A08000A12906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7A7A971D46A08000A12906 /* LaunchScreen.storyboard in Resources */,
+				AA7A7A941D46A08000A12906 /* Assets.xcassets in Resources */,
+				AA7A7A921D46A08000A12906 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7A9B1D46A08000A12906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7AA61D46A08000A12906 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA7A7A801D46A08000A12906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */,
+				AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */,
+				AA7A7A891D46A08000A12906 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7A991D46A08000A12906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7A7AA21D46A08000A12906 /* WalletTDDTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA7A7AA41D46A08000A12906 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA7A7AAD1D46A08100A12906 /* WalletTDDUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA7A7A9F1D46A08000A12906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA7A7A831D46A08000A12906 /* WalletTDD */;
+			targetProxy = AA7A7A9E1D46A08000A12906 /* PBXContainerItemProxy */;
+		};
+		AA7A7AAA1D46A08000A12906 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AA7A7A831D46A08000A12906 /* WalletTDD */;
+			targetProxy = AA7A7AA91D46A08000A12906 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AA7A7A901D46A08000A12906 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7A7A911D46A08000A12906 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AA7A7A951D46A08000A12906 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA7A7A961D46A08000A12906 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA7A7AAF1D46A08100A12906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA7A7AB01D46A08100A12906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA7A7AB21D46A08100A12906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WalletTDD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AA7A7AB31D46A08100A12906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WalletTDD/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AA7A7AB51D46A08100A12906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WalletTDDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalletTDD.app/WalletTDD";
+			};
+			name = Debug;
+		};
+		AA7A7AB61D46A08100A12906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WalletTDDTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDDTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WalletTDD.app/WalletTDD";
+			};
+			name = Release;
+		};
+		AA7A7AB81D46A08100A12906 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WalletTDDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WalletTDD;
+			};
+			name = Debug;
+		};
+		AA7A7AB91D46A08100A12906 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WalletTDDUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.juarru.WalletTDDUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WalletTDD;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA7A7A7F1D46A08000A12906 /* Build configuration list for PBXProject "WalletTDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7A7AAF1D46A08100A12906 /* Debug */,
+				AA7A7AB01D46A08100A12906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA7A7AB11D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7A7AB21D46A08100A12906 /* Debug */,
+				AA7A7AB31D46A08100A12906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA7A7AB41D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7A7AB51D46A08100A12906 /* Debug */,
+				AA7A7AB61D46A08100A12906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AA7A7AB71D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA7A7AB81D46A08100A12906 /* Debug */,
+				AA7A7AB91D46A08100A12906 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA7A7A7C1D46A08000A12906 /* Project object */;
+}
