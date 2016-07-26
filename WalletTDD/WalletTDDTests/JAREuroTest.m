@@ -18,9 +18,21 @@
 -(void)testMultiplication{
 
     JAREuro *euro = [[JAREuro alloc] initWithAmount:5];
-    [euro times:2];
+    JAREuro *ten = [[JAREuro alloc]initWithAmount:10];
+    JAREuro *total = [euro times:2];
     
-    XCTAssertEqual(euro.amount, 10, @"5*2 should be 10");
+    XCTAssertEqualObjects(total, ten , @"5 *2 Should be 10");
+    
+}
+
+-(void)testEquality{
+
+    JAREuro *five = [[JAREuro alloc] initWithAmount:5];
+    JAREuro *ten = [[JAREuro alloc] initWithAmount:10];
+    
+    JAREuro *total = [five times:2];
+    
+    XCTAssertEqualObjects(total, ten, @"Equivalent objects should be equal");
     
 }
 

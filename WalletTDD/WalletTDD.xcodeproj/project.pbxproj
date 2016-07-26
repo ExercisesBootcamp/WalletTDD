@@ -17,6 +17,13 @@
 		AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */; };
 		AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
 		AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
+		AAD3A3E71D47DE3300561370 /* JARDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E61D47DE3300561370 /* JARDollarTest.m */; };
+		AAD3A3EA1D47DF1500561370 /* JARDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E91D47DF1500561370 /* JARDollar.m */; };
+		AAD3A3EB1D47DF2200561370 /* JARDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E91D47DF1500561370 /* JARDollar.m */; };
+		AAD3A3EE1D47E1FF00561370 /* JARMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3ED1D47E1FF00561370 /* JARMoney.m */; };
+		AAD3A3F21D47E39D00561370 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3F11D47E39D00561370 /* NSObject+GNUStepAddons.m */; };
+		AAD3A3F41D47E6E400561370 /* JARMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3F31D47E6E400561370 /* JARMoneyTest.m */; };
+		AAD3A3F51D47E76E00561370 /* JARMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3ED1D47E1FF00561370 /* JARMoney.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +62,14 @@
 		AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuroTest.m; sourceTree = "<group>"; };
 		AA7A7AC41D46A41D00A12906 /* JAREuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAREuro.h; sourceTree = "<group>"; };
 		AA7A7AC51D46A41D00A12906 /* JAREuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuro.m; sourceTree = "<group>"; };
+		AAD3A3E61D47DE3300561370 /* JARDollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARDollarTest.m; sourceTree = "<group>"; };
+		AAD3A3E81D47DF1500561370 /* JARDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARDollar.h; sourceTree = "<group>"; };
+		AAD3A3E91D47DF1500561370 /* JARDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARDollar.m; sourceTree = "<group>"; };
+		AAD3A3EC1D47E1FF00561370 /* JARMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARMoney.h; sourceTree = "<group>"; };
+		AAD3A3ED1D47E1FF00561370 /* JARMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARMoney.m; sourceTree = "<group>"; };
+		AAD3A3F01D47E39D00561370 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
+		AAD3A3F11D47E39D00561370 /* NSObject+GNUStepAddons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+GNUStepAddons.m"; sourceTree = "<group>"; };
+		AAD3A3F31D47E6E400561370 /* JARMoneyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARMoneyTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +120,7 @@
 		AA7A7A861D46A08000A12906 /* WalletTDD */ = {
 			isa = PBXGroup;
 			children = (
+				AAD3A3EF1D47E34800561370 /* Categories */,
 				AA7A7ABD1D46A32400A12906 /* Models */,
 				AA7A7A8A1D46A08000A12906 /* AppDelegate.h */,
 				AA7A7A8B1D46A08000A12906 /* AppDelegate.m */,
@@ -149,6 +165,8 @@
 			isa = PBXGroup;
 			children = (
 				AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */,
+				AAD3A3E61D47DE3300561370 /* JARDollarTest.m */,
+				AAD3A3F31D47E6E400561370 /* JARMoneyTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -158,8 +176,21 @@
 			children = (
 				AA7A7AC41D46A41D00A12906 /* JAREuro.h */,
 				AA7A7AC51D46A41D00A12906 /* JAREuro.m */,
+				AAD3A3E81D47DF1500561370 /* JARDollar.h */,
+				AAD3A3E91D47DF1500561370 /* JARDollar.m */,
+				AAD3A3EC1D47E1FF00561370 /* JARMoney.h */,
+				AAD3A3ED1D47E1FF00561370 /* JARMoney.m */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		AAD3A3EF1D47E34800561370 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AAD3A3F01D47E39D00561370 /* NSObject+GNUStepAddons.h */,
+				AAD3A3F11D47E39D00561370 /* NSObject+GNUStepAddons.m */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,8 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD3A3EE1D47E1FF00561370 /* JARMoney.m in Sources */,
 				AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */,
+				AAD3A3F21D47E39D00561370 /* NSObject+GNUStepAddons.m in Sources */,
 				AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */,
+				AAD3A3EA1D47DF1500561370 /* JARDollar.m in Sources */,
 				AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */,
 				AA7A7A891D46A08000A12906 /* main.m in Sources */,
 			);
@@ -303,8 +337,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD3A3F51D47E76E00561370 /* JARMoney.m in Sources */,
+				AAD3A3E71D47DE3300561370 /* JARDollarTest.m in Sources */,
+				AAD3A3EB1D47DF2200561370 /* JARDollar.m in Sources */,
 				AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */,
 				AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */,
+				AAD3A3F41D47E6E400561370 /* JARMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +558,7 @@
 				AA7A7AB31D46A08100A12906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA7A7AB41D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +567,7 @@
 				AA7A7AB61D46A08100A12906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA7A7AB71D46A08100A12906 /* Build configuration list for PBXNativeTarget "WalletTDDUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +576,7 @@
 				AA7A7AB91D46A08100A12906 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,18 +1,18 @@
 //
-//  JAREuro.m
+//  JARDollar.m
 //  WalletTDD
 //
-//  Created by Juan Arillo Ruiz on 25/7/16.
+//  Created by Juan Arillo Ruiz on 26/7/16.
 //  Copyright © 2016 Juan Arillo Ruiz. All rights reserved.
 //
 
-#import "JAREuro.h"
+#import "JARDollar.h"
 
-@interface JAREuro()
+@interface JARDollar()
 @property(nonatomic) NSInteger amount;
 @end
 
-@implementation JAREuro
+@implementation JARDollar
 
 -(id) initWithAmount:(NSInteger) amount{
     
@@ -24,11 +24,11 @@
     
 }
 
--(JAREuro*) times: (NSInteger) multiplier{
+-(JARDollar*) times: (NSInteger) multiplier{
     
-    JAREuro *newEuro = [[JAREuro alloc]initWithAmount:self.amount * multiplier];
+    JARDollar *newDollar = [[JARDollar alloc]initWithAmount:self.amount * multiplier];
     
-    return newEuro;
+    return newDollar;
     
 }
 
