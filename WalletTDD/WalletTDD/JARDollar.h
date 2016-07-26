@@ -11,8 +11,6 @@
 
 @interface JARDollar : JARMoney
 
--(id) initWithAmount:(NSInteger) amount;
-
 -(JARDollar*) times: (NSInteger) multiplier;
 
 @end

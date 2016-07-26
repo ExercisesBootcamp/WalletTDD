@@ -11,7 +11,6 @@
 
 @interface JAREuro : JARMoney
 
--(id) initWithAmount:(NSInteger) amount;
 
 -(JAREuro*) times: (NSInteger) multiplier;
 

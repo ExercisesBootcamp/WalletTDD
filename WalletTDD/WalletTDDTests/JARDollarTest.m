@@ -37,4 +37,13 @@
     
 }
 
+-(void)testHash{
+    
+    JARDollar *a = [[JARDollar alloc] initWithAmount:2];
+    JARDollar *b = [[JARDollar alloc] initWithAmount:2];
+    
+    XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
+    
+}
+
 @end

@@ -36,4 +36,13 @@
     
 }
 
+-(void)testHash{
+    
+    JAREuro *a = [[JAREuro alloc] initWithAmount:2];
+    JAREuro *b = [[JAREuro alloc] initWithAmount:2];
+    
+    XCTAssertEqual([a hash], [b hash], @"Equal objects must have same hash");
+    
+}
+
 @end
