@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA6344081D491AAA00EDCA05 /* JARBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */; };
+		AA63440B1D491BB700EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
+		AA63440C1D491BB900EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
+		AA63440E1D492E0000EDCA05 /* JARWalletTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440D1D492E0000EDCA05 /* JARWalletTest.m */; };
+		AA6344111D492FE700EDCA05 /* JARWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6344101D492FE700EDCA05 /* JARWallet.m */; };
+		AA6344121D492FEC00EDCA05 /* JARWallet.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6344101D492FE700EDCA05 /* JARWallet.m */; };
 		AA7A7A891D46A08000A12906 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A881D46A08000A12906 /* main.m */; };
 		AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A8B1D46A08000A12906 /* AppDelegate.m */; };
 		AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7A8E1D46A08000A12906 /* ViewController.m */; };
@@ -14,12 +20,6 @@
 		AA7A7A941D46A08000A12906 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A931D46A08000A12906 /* Assets.xcassets */; };
 		AA7A7A971D46A08000A12906 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA7A7A951D46A08000A12906 /* LaunchScreen.storyboard */; };
 		AA7A7AAD1D46A08100A12906 /* WalletTDDUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */; };
-		AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */; };
-		AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
-		AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A7AC51D46A41D00A12906 /* JAREuro.m */; };
-		AAD3A3E71D47DE3300561370 /* JARDollarTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E61D47DE3300561370 /* JARDollarTest.m */; };
-		AAD3A3EA1D47DF1500561370 /* JARDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E91D47DF1500561370 /* JARDollar.m */; };
-		AAD3A3EB1D47DF2200561370 /* JARDollar.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3E91D47DF1500561370 /* JARDollar.m */; };
 		AAD3A3EE1D47E1FF00561370 /* JARMoney.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3ED1D47E1FF00561370 /* JARMoney.m */; };
 		AAD3A3F21D47E39D00561370 /* NSObject+GNUStepAddons.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3F11D47E39D00561370 /* NSObject+GNUStepAddons.m */; };
 		AAD3A3F41D47E6E400561370 /* JARMoneyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD3A3F31D47E6E400561370 /* JARMoneyTest.m */; };
@@ -44,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBrokerTests.m; sourceTree = "<group>"; };
+		AA6344091D491BB700EDCA05 /* JARBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARBroker.h; sourceTree = "<group>"; };
+		AA63440A1D491BB700EDCA05 /* JARBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBroker.m; sourceTree = "<group>"; };
+		AA63440D1D492E0000EDCA05 /* JARWalletTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARWalletTest.m; sourceTree = "<group>"; };
+		AA63440F1D492FE700EDCA05 /* JARWallet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARWallet.h; sourceTree = "<group>"; };
+		AA6344101D492FE700EDCA05 /* JARWallet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARWallet.m; sourceTree = "<group>"; };
 		AA7A7A841D46A08000A12906 /* WalletTDD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WalletTDD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7A7A881D46A08000A12906 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AA7A7A8A1D46A08000A12906 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,12 +65,6 @@
 		AA7A7AA81D46A08000A12906 /* WalletTDDUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WalletTDDUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA7A7AAC1D46A08100A12906 /* WalletTDDUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WalletTDDUITests.m; sourceTree = "<group>"; };
 		AA7A7AAE1D46A08100A12906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuroTest.m; sourceTree = "<group>"; };
-		AA7A7AC41D46A41D00A12906 /* JAREuro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAREuro.h; sourceTree = "<group>"; };
-		AA7A7AC51D46A41D00A12906 /* JAREuro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAREuro.m; sourceTree = "<group>"; };
-		AAD3A3E61D47DE3300561370 /* JARDollarTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARDollarTest.m; sourceTree = "<group>"; };
-		AAD3A3E81D47DF1500561370 /* JARDollar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARDollar.h; sourceTree = "<group>"; };
-		AAD3A3E91D47DF1500561370 /* JARDollar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARDollar.m; sourceTree = "<group>"; };
 		AAD3A3EC1D47E1FF00561370 /* JARMoney.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARMoney.h; sourceTree = "<group>"; };
 		AAD3A3ED1D47E1FF00561370 /* JARMoney.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARMoney.m; sourceTree = "<group>"; };
 		AAD3A3F01D47E39D00561370 /* NSObject+GNUStepAddons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+GNUStepAddons.h"; sourceTree = "<group>"; };
@@ -164,9 +164,9 @@
 		AA7A7ABA1D46A1DD00A12906 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AA7A7ABB1D46A22F00A12906 /* JAREuroTest.m */,
-				AAD3A3E61D47DE3300561370 /* JARDollarTest.m */,
 				AAD3A3F31D47E6E400561370 /* JARMoneyTest.m */,
+				AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */,
+				AA63440D1D492E0000EDCA05 /* JARWalletTest.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -174,12 +174,12 @@
 		AA7A7ABD1D46A32400A12906 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				AA7A7AC41D46A41D00A12906 /* JAREuro.h */,
-				AA7A7AC51D46A41D00A12906 /* JAREuro.m */,
-				AAD3A3E81D47DF1500561370 /* JARDollar.h */,
-				AAD3A3E91D47DF1500561370 /* JARDollar.m */,
 				AAD3A3EC1D47E1FF00561370 /* JARMoney.h */,
 				AAD3A3ED1D47E1FF00561370 /* JARMoney.m */,
+				AA6344091D491BB700EDCA05 /* JARBroker.h */,
+				AA63440A1D491BB700EDCA05 /* JARBroker.m */,
+				AA63440F1D492FE700EDCA05 /* JARWallet.h */,
+				AA6344101D492FE700EDCA05 /* JARWallet.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -323,11 +323,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA63440B1D491BB700EDCA05 /* JARBroker.m in Sources */,
+				AA6344111D492FE700EDCA05 /* JARWallet.m in Sources */,
 				AAD3A3EE1D47E1FF00561370 /* JARMoney.m in Sources */,
-				AA7A7AC61D46A41D00A12906 /* JAREuro.m in Sources */,
 				AAD3A3F21D47E39D00561370 /* NSObject+GNUStepAddons.m in Sources */,
 				AA7A7A8F1D46A08000A12906 /* ViewController.m in Sources */,
-				AAD3A3EA1D47DF1500561370 /* JARDollar.m in Sources */,
 				AA7A7A8C1D46A08000A12906 /* AppDelegate.m in Sources */,
 				AA7A7A891D46A08000A12906 /* main.m in Sources */,
 			);
@@ -337,11 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA63440C1D491BB900EDCA05 /* JARBroker.m in Sources */,
 				AAD3A3F51D47E76E00561370 /* JARMoney.m in Sources */,
-				AAD3A3E71D47DE3300561370 /* JARDollarTest.m in Sources */,
-				AAD3A3EB1D47DF2200561370 /* JARDollar.m in Sources */,
-				AA7A7AC71D46A50900A12906 /* JAREuro.m in Sources */,
-				AA7A7ABC1D46A22F00A12906 /* JAREuroTest.m in Sources */,
+				AA63440E1D492E0000EDCA05 /* JARWalletTest.m in Sources */,
+				AA6344081D491AAA00EDCA05 /* JARBrokerTests.m in Sources */,
+				AA6344121D492FEC00EDCA05 /* JARWallet.m in Sources */,
 				AAD3A3F41D47E6E400561370 /* JARMoneyTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

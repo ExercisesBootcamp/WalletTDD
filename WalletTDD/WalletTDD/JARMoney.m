@@ -10,44 +10,73 @@
 #import "NSObject+GNUStepAddons.h"
 
 @interface JARMoney()
-@property (nonatomic) NSInteger amount;
+@property (nonatomic, strong) NSNumber *amount;
 @end
 
 @implementation JARMoney
 
--(id)initWithAmount:(NSInteger) amount{
++(id) euroWithAmount:(NSInteger) amount{
+    
+    return [[JARMoney alloc] initWithAmount:amount currency:@"EUR"];
+    
+}
+
++(id) dollarWithAmount: (NSInteger) amount{
+    
+    return [[JARMoney alloc] initWithAmount:amount currency:@"USD"];
+}
+
+
+-(id)initWithAmount:(NSInteger) amount currency:(NSString *) currency{
     
     if(self = [super init]){
-        _amount = amount;
+        _amount = @(amount);
+        _currency = currency;
     }
     return self;
     
 }
 
--(JARMoney *) times: (NSInteger) multiplier{
+-(id<JARMoney>) times: (NSInteger) multiplier{
     
     // No se debería llamar, sino que se debería de usa el de la subclase
     
-    return [self subclassResponsibility:_cmd];
+    JARMoney *newMoney = [[JARMoney alloc]initWithAmount:[self.amount integerValue] * multiplier currency:self.currency];
+        
+    return newMoney;
+        
+
+}
+
+-(id<JARMoney>) plus: (JARMoney *) other{
     
+    NSInteger totalAmount = [self.amount integerValue] + [other.amount integerValue];
+    JARMoney *total = [[JARMoney alloc] initWithAmount:totalAmount currency:self.currency];
+
+    return total;
 }
 
 #pragma mark - Overwritten
 -(NSString *)description{
     
-    return [NSString stringWithFormat:@"<%@ %ld>",[self class], [self amount]];
+    return [NSString stringWithFormat:@"<%@: %@ %@>",[self class],self.currency, self.amount];
     
 }
 
 -(BOOL)isEqual:(id)object{
     
-    return [self amount] == [object amount];
+    if([self.currency isEqual:[object currency]]){
+        return [self amount] == [object amount];
+    } else {
+        return NO;
+    }
+    
     
 }
 
 - (NSUInteger) hash{
     
-    return (NSUInteger) self.amount;
+    return [self.amount integerValue];
     
 }
 
