@@ -10,5 +10,5 @@
 #import "JARMoney.h"
 
 @interface JARWallet : NSObject<JARMoney>
-
+@property(nonatomic, readonly) NSUInteger count;
 @end

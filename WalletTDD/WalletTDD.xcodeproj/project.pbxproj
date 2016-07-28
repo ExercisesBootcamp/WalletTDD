@@ -11,6 +11,7 @@
 		AA0A98281D4A58DD00F8909D /* JARSimpleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA0A98261D4A58DD00F8909D /* JARSimpleViewController.xib */; };
 		AA0A98291D4A58E100F8909D /* JARSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98251D4A58DD00F8909D /* JARSimpleViewController.m */; };
 		AA0A982C1D4A591C00F8909D /* JARControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A982B1D4A591C00F8909D /* JARControllerTests.m */; };
+		AA0A982F1D4A5DE200F8909D /* JARWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A982E1D4A5DE200F8909D /* JARWalletTableViewController.m */; };
 		AA6344081D491AAA00EDCA05 /* JARBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */; };
 		AA63440B1D491BB700EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
 		AA63440C1D491BB900EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
@@ -52,6 +53,8 @@
 		AA0A98251D4A58DD00F8909D /* JARSimpleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARSimpleViewController.m; sourceTree = "<group>"; };
 		AA0A98261D4A58DD00F8909D /* JARSimpleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JARSimpleViewController.xib; sourceTree = "<group>"; };
 		AA0A982B1D4A591C00F8909D /* JARControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARControllerTests.m; sourceTree = "<group>"; };
+		AA0A982D1D4A5DE200F8909D /* JARWalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARWalletTableViewController.h; sourceTree = "<group>"; };
+		AA0A982E1D4A5DE200F8909D /* JARWalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARWalletTableViewController.m; sourceTree = "<group>"; };
 		AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBrokerTests.m; sourceTree = "<group>"; };
 		AA6344091D491BB700EDCA05 /* JARBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARBroker.h; sourceTree = "<group>"; };
 		AA63440A1D491BB700EDCA05 /* JARBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBroker.m; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				AA0A98241D4A58DD00F8909D /* JARSimpleViewController.h */,
 				AA0A98251D4A58DD00F8909D /* JARSimpleViewController.m */,
 				AA0A98261D4A58DD00F8909D /* JARSimpleViewController.xib */,
+				AA0A982D1D4A5DE200F8909D /* JARWalletTableViewController.h */,
+				AA0A982E1D4A5DE200F8909D /* JARWalletTableViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -352,6 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A982F1D4A5DE200F8909D /* JARWalletTableViewController.m in Sources */,
 				AA63440B1D491BB700EDCA05 /* JARBroker.m in Sources */,
 				AA6344111D492FE700EDCA05 /* JARWallet.m in Sources */,
 				AA0A98271D4A58DD00F8909D /* JARSimpleViewController.m in Sources */,
