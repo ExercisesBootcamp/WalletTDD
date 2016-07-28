@@ -12,6 +12,9 @@
 		AA0A98291D4A58E100F8909D /* JARSimpleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98251D4A58DD00F8909D /* JARSimpleViewController.m */; };
 		AA0A982C1D4A591C00F8909D /* JARControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A982B1D4A591C00F8909D /* JARControllerTests.m */; };
 		AA0A982F1D4A5DE200F8909D /* JARWalletTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A982E1D4A5DE200F8909D /* JARWalletTableViewController.m */; };
+		AA0A98321D4A647700F8909D /* JARNSNotificationCenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98311D4A647700F8909D /* JARNSNotificationCenterTests.m */; };
+		AA0A98351D4A66C200F8909D /* JARFakeNotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98341D4A66C200F8909D /* JARFakeNotificationCenter.m */; };
+		AA0A98371D4A755000F8909D /* JARNetworkTest.m in Sources */ = {isa = PBXBuildFile; fileRef = AA0A98361D4A755000F8909D /* JARNetworkTest.m */; };
 		AA6344081D491AAA00EDCA05 /* JARBrokerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */; };
 		AA63440B1D491BB700EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
 		AA63440C1D491BB900EDCA05 /* JARBroker.m in Sources */ = {isa = PBXBuildFile; fileRef = AA63440A1D491BB700EDCA05 /* JARBroker.m */; };
@@ -55,6 +58,10 @@
 		AA0A982B1D4A591C00F8909D /* JARControllerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARControllerTests.m; sourceTree = "<group>"; };
 		AA0A982D1D4A5DE200F8909D /* JARWalletTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARWalletTableViewController.h; sourceTree = "<group>"; };
 		AA0A982E1D4A5DE200F8909D /* JARWalletTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARWalletTableViewController.m; sourceTree = "<group>"; };
+		AA0A98311D4A647700F8909D /* JARNSNotificationCenterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARNSNotificationCenterTests.m; sourceTree = "<group>"; };
+		AA0A98331D4A66C200F8909D /* JARFakeNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARFakeNotificationCenter.h; sourceTree = "<group>"; };
+		AA0A98341D4A66C200F8909D /* JARFakeNotificationCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARFakeNotificationCenter.m; sourceTree = "<group>"; };
+		AA0A98361D4A755000F8909D /* JARNetworkTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARNetworkTest.m; sourceTree = "<group>"; };
 		AA6344071D491AAA00EDCA05 /* JARBrokerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBrokerTests.m; sourceTree = "<group>"; };
 		AA6344091D491BB700EDCA05 /* JARBroker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JARBroker.h; sourceTree = "<group>"; };
 		AA63440A1D491BB700EDCA05 /* JARBroker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JARBroker.m; sourceTree = "<group>"; };
@@ -128,6 +135,24 @@
 			name = Controllers;
 			sourceTree = "<group>";
 		};
+		AA0A98301D4A644F00F8909D /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98311D4A647700F8909D /* JARNSNotificationCenterTests.m */,
+				AA0A98331D4A66C200F8909D /* JARFakeNotificationCenter.h */,
+				AA0A98341D4A66C200F8909D /* JARFakeNotificationCenter.m */,
+			);
+			name = Singletons;
+			sourceTree = "<group>";
+		};
+		AA0A98381D4A755900F8909D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A98361D4A755000F8909D /* JARNetworkTest.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		AA7A7A7B1D46A08000A12906 = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +203,8 @@
 		AA7A7AA01D46A08000A12906 /* WalletTDDTests */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A98381D4A755900F8909D /* Network */,
+				AA0A98301D4A644F00F8909D /* Singletons */,
 				AA0A982A1D4A58F000F8909D /* Controllers */,
 				AA7A7ABA1D46A1DD00A12906 /* Models */,
 				AA7A7AA31D46A08000A12906 /* Info.plist */,
@@ -373,11 +400,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA0A98321D4A647700F8909D /* JARNSNotificationCenterTests.m in Sources */,
 				AA63440C1D491BB900EDCA05 /* JARBroker.m in Sources */,
 				AAD3A3F51D47E76E00561370 /* JARMoney.m in Sources */,
 				AA63440E1D492E0000EDCA05 /* JARWalletTest.m in Sources */,
+				AA0A98351D4A66C200F8909D /* JARFakeNotificationCenter.m in Sources */,
 				AA0A982C1D4A591C00F8909D /* JARControllerTests.m in Sources */,
 				AA6344081D491AAA00EDCA05 /* JARBrokerTests.m in Sources */,
+				AA0A98371D4A755000F8909D /* JARNetworkTest.m in Sources */,
 				AA6344121D492FEC00EDCA05 /* JARWallet.m in Sources */,
 				AAD3A3F41D47E6E400561370 /* JARMoneyTest.m in Sources */,
 				AA0A98291D4A58E100F8909D /* JARSimpleViewController.m in Sources */,

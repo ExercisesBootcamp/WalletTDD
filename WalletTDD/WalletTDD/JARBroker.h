@@ -15,5 +15,6 @@
 -(JARMoney*)reduce: (id<JARMoney>) money toCurrency:(NSString *)currency;
 -(void)addRate: (NSInteger) rate fromCurrency:(NSString *)fromCurrency toCurrency: (NSString *)toCurrency;
 -(NSString *) keyFromCurrency:(NSString *)fromCurrency toCurrency: (NSString *)toCurrency;
+-(void) parseJSONRates: (NSData *) json;
 
 @end

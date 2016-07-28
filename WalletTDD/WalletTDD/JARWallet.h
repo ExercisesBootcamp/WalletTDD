@@ -11,4 +11,6 @@
 
 @interface JARWallet : NSObject<JARMoney>
 @property(nonatomic, readonly) NSUInteger count;
+
+-(void)subscribeToMemoryWarning:(NSNotificationCenter *) nc;
 @end
