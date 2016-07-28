@@ -8,9 +8,11 @@
 
 #import "JARWalletTableViewController.h"
 #import "JARWallet.h"
+#import "JARBroker.h" //
 
 @interface JARWalletTableViewController ()
 @property(nonatomic,strong) JARWallet *model;
+@property(nonatomic,strong) JARBroker *broker; //
 @end
 
 @implementation JARWalletTableViewController
@@ -42,22 +44,48 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    
+    // Debe de ser el número de divisas + 1
+    return [self.model countCurrencies] + 1; //
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.model count] + 1;
+    
+    // Aqui devolver el numero  para cada divisa
+    return [self.model countMoneyForCurrency:section] + 1;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    JARMoney *money = [self.model moneyForIndexPath:indexPath];
+    
+    static NSString *cellId = @"cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    
+    if (cell == nil) {
+        
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellId];
+    }
+    
+    cell.textLabel.text = money.currency;
+    cell.detailTextLabel.text = money.amount.stringValue;
+    
+    // Celda extra
+    if (indexPath.row == [self.model countMoneyForCurrency:indexPath.section] ) {
+        
+        cell.textLabel.text = @"Subtotal";
+    }
+    if (indexPath.section == [self.model countCurrencies]) {
+        
+        cell.textLabel.text = @"Total EUR";
+    }
     
     return cell;
+    
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -8,6 +8,12 @@
 
 #import <UIKit/UIKit.h>
 @class JARWallet;
+
+@class JARBroker; //
+
+#define EUR_SEC 0 //
+#define USD_SEC 1 //
+
 @interface JARWalletTableViewController : UITableViewController
 
 

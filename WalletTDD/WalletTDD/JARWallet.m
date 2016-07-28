@@ -7,10 +7,12 @@
 //
 
 #import "JARWallet.h"
+#import "JARBroker.h"
 @import UIKit;
 
 @interface JARWallet()
 @property (nonatomic, strong) NSMutableArray *moneys;
+@property (nonatomic, strong) JARBroker *broker;
 @end
 
 @implementation JARWallet
@@ -18,6 +20,12 @@
 -(NSUInteger) count{
     
     return [self.moneys count];
+    
+}
+
+-(NSUInteger) countCurrencies{
+    
+    return [self.currencies count];
     
 }
 
@@ -31,6 +39,20 @@
     
     return self;
     
+}
+
+-(id)initWithAmount:(NSInteger)amount currency:(NSString *)currency broker:(JARBroker *)broker {
+    
+    if (self = [super init]) {
+        
+        JARMoney *money = [[JARMoney alloc]initWithAmount:amount currency:currency];
+        _moneys = [NSMutableArray array];
+        [_moneys addObject:money];
+        
+        _broker = broker;
+    }
+    
+    return self;
 }
 
 -(id<JARMoney>)plus:(JARMoney *)money{
@@ -67,6 +89,68 @@
     
     return result;
 
+}
+
+-(NSUInteger)countMoneyForCurrency:(NSUInteger)section{
+    
+    return [self moneysForCurrency:section].count;
+    
+} //
+
+-(NSArray *)moneysForCurrency:(NSUInteger)section {
+    
+    if (section >= [self.currencies count]) {
+        
+        return @[];
+    }
+   
+    NSMutableArray *moneys = [[NSMutableArray alloc]init];
+    
+    for (JARMoney *money in self.moneys) {
+        if (self.currencies[section] == money.currency) {
+            [moneys addObject:money];
+        }
+    }
+    return moneys;
+} //
+
+-(JARMoney *)moneyForIndexPath:(NSIndexPath *)indexPath {
+    
+    // Si nos piden la seccion TOTAL
+    if (indexPath.section >= [self.currencies count]) {
+        
+        JARMoney *total = [[JARMoney alloc] init];
+        
+        for (JARMoney *money in self.moneys) {
+            
+            total = [total plus:[money reduceToCurrency:@"EUR" withBroker:self.broker]];
+        }
+        
+        
+        return total;
+    }
+    NSArray *moneys = [self moneysForCurrency:indexPath.section];
+    
+    if (indexPath.row >= moneys.count ) {
+        
+        return [self subtotal:indexPath.section];
+    }
+    JARMoney *money = moneys[indexPath.row];
+    
+    return money;
+}
+
+-(JARMoney *)subtotal:(NSUInteger)forSection {
+    
+    //Devolvemos la suma de los elementos del array
+    JARMoney *subtotal = [[JARMoney alloc]init];
+    NSArray *moneys = [self moneysForCurrency:forSection];
+    
+    for (JARMoney *money in moneys) {
+        subtotal = [subtotal plus:money];
+    }
+    
+    return subtotal;
 }
 
 #pragma mark - Notifications
