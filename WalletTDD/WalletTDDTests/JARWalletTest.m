@@ -31,7 +31,7 @@
 -(void)testAdditionWithReduction{
     
     JARBroker *broker = [JARBroker new];
-    [broker addRate: 2 fromCurrency:@"USD" toCurrency:@"EUR"];
+    [broker addRate: 2 fromCurrency:@"EUR" toCurrency:@"USD"];
     
     JARWallet *wallet = [[JARWallet alloc] initWithAmount: 40 currency:@"EUR"];
     [wallet plus:[JARMoney dollarWithAmount: 20]];

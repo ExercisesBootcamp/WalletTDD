@@ -10,8 +10,10 @@
 #import "JARMoney.h"
 @interface JARBroker : NSObject
 
+@property(nonatomic,strong) NSMutableDictionary *rates;
 
--(id<JARMoney>)reduce: (JARMoney*) money toCurrency:(NSString *)currency;
+-(JARMoney*)reduce: (id<JARMoney>) money toCurrency:(NSString *)currency;
 -(void)addRate: (NSInteger) rate fromCurrency:(NSString *)fromCurrency toCurrency: (NSString *)toCurrency;
+-(NSString *) keyFromCurrency:(NSString *)fromCurrency toCurrency: (NSString *)toCurrency;
 
 @end

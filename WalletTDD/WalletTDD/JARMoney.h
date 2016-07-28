@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 @class JARMoney;
+@class JARBroker;
 
 @protocol JARMoney <NSObject>
 
@@ -15,6 +16,8 @@
 
 -(id<JARMoney>) times: (NSInteger) multiplier;
 -(id<JARMoney>) plus: (JARMoney *) other;
+
+-(id<JARMoney>) reduceToCurrency:(NSString*)currency withBroker:(JARBroker*) broker;
 
 @end
 

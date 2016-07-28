@@ -11,7 +11,7 @@
 
 @interface JARBroker()
 
-@property(nonatomic,strong) NSMutableDictionary *rates;
+
 @end
 
 @implementation JARBroker
@@ -26,25 +26,9 @@
 
 -(id<JARMoney>)reduce: (JARMoney*) money toCurrency:(NSString *)currency{
     
-    JARMoney *result;
-    double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency toCurrency:currency]]doubleValue];
-    
-    // Comprobamos que divisa de origen y destino son la misma
-    if ([money.currency isEqual:currency]){
-        result = money;
-    } else if (rate ==0){
-        // No hay tasa de conversión, excepción que te crió
-        [NSException raise:@"NoConversionRateException" format:@"Must have a conversion from %@ to %@", money.currency, currency];
-    } else {
-        // Tenemos conversion
-        double rate = [[self.rates objectForKey:[self keyFromCurrency:money.currency toCurrency:currency]]doubleValue];
-        
-        NSInteger newAmount = [money.amount integerValue] * rate;
-        
-        result = [[JARMoney alloc] initWithAmount:newAmount currency:currency];
-    }
-    
-    return result;
+    // Double Dispatch
+    return [money reduceToCurrency:currency withBroker:self];
+   
     
 }
 

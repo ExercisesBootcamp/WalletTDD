@@ -50,4 +50,17 @@
     return self;
 }
 
+-(id<JARMoney>)reduceToCurrency:(NSString *)currency withBroker:(JARBroker *)broker{
+    
+    JARMoney *result = [[JARMoney alloc] initWithAmount:0 currency:currency];
+    
+    for (JARMoney *each in self.moneys) {
+        result = [result plus:[each reduceToCurrency:currency withBroker:broker]];
+                  
+    }
+    
+    return result;
+    
+}
+
 @end

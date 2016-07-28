@@ -8,6 +8,7 @@
 
 #import "JARMoney.h"
 #import "NSObject+GNUStepAddons.h"
+#import "JARBroker.h"
 
 @interface JARMoney()
 @property (nonatomic, strong) NSNumber *amount;
@@ -54,6 +55,29 @@
     JARMoney *total = [[JARMoney alloc] initWithAmount:totalAmount currency:self.currency];
 
     return total;
+}
+
+-(id<JARMoney>) reduceToCurrency:(NSString*)currency withBroker:(JARBroker*) broker{
+    
+    JARMoney *result;
+    double rate = [[broker.rates objectForKey:[broker keyFromCurrency:self.currency toCurrency:currency]]doubleValue];
+    
+    // Comprobamos que divisa de origen y destino son la misma
+    if ([self.currency isEqual:currency]){
+        result = self;
+    } else if (rate ==0){
+        // No hay tasa de conversión, excepción que te crió
+        [NSException raise:@"NoConversionRateException" format:@"Must have a conversion from %@ to %@", self.currency, currency];
+    } else {
+        // Tenemos conversion
+        
+        NSInteger newAmount = [self.amount integerValue] * rate;
+        
+        result = [[JARMoney alloc] initWithAmount:newAmount currency:currency];
+    }
+    
+    return result;
+    
 }
 
 #pragma mark - Overwritten
